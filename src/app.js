@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan('dev'));
-app.use('/api/sensors', routerSensors); // Cambiado a utilizar las rutas de tickets
+app.use('/', routerSensors); // Cambiado a utilizar las rutas de tickets
 
 export default app;
 
