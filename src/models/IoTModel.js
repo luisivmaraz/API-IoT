@@ -1,9 +1,12 @@
 import { Schema,model } from "mongoose";
 
 const sensorSchema = new Schema({
-    temperatura:String,
-    humedad:String,
-    distancia:String
+
+    status:String,
+    typeSensor: String,
+    sensorData:String,
+    unit:String,
+    parameter: String
 },{
     timestamps:true,
     versionKey:false
